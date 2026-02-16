@@ -25,13 +25,12 @@ public final class City {
 
     @Override
     public boolean equals(Object obj) {
-
-        if (this == obj)
+        if (this == obj) {
             return true;
-
-        if (!(obj instanceof City))
+        }
+        if (!(obj instanceof City)) {
             return false;
-
+        }
         City other = (City) obj;
         return Objects.equals(name, other.name);
     }
